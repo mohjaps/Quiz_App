@@ -1,18 +1,22 @@
 let start_id = document.getElementById("startQuiz2");
 let instructionSection = document.getElementById("instructions-section");
-start_id.addEventListener(
-  "click",
-  () => {
-    route(instructionSection ,() => {
-        alert("You are home");
-      });
-  },
-  
-);
+start_id.addEventListener("click", () => {
+    route(instructionSection, () => {});
+});
 
 let next_id = document.getElementById("startQuiz");
 next_id.addEventListener("click", () => {
   route(quizSection);
+});
+
+let quizSection_id = document.getElementById("startQuiz");
+let quizSection = document.getElementById("quizSection");
+quizSection_id.addEventListener("click", () => {
+  route(quizSection, () => {
+    var fiveMinutes = 60 * 10,
+      display = document.querySelector("#timer");
+    startTimer(fiveMinutes, display);
+  });
 });
 
 let home_id = document.getElementById("QuizToHomeBtn");
@@ -29,4 +33,26 @@ function route(e, callback = () => {}) {
     cls.classList.add("hidden");
   });
   e.classList.remove("hidden");
+}
+
+function startTimer(duration, display) {
+  var timer = duration,
+    minutes,
+    seconds;
+  const intervalId = setInterval(function () {
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
+
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    display.textContent = minutes + ":" + seconds;
+    if (minutes == 0 && seconds == 0) {
+      display.textContent = "00:00";
+      clearTimeout(intervalId);
+    }
+    if (--timer < 0) {
+      timer = duration;
+    }
+  }, 1000);
 }
