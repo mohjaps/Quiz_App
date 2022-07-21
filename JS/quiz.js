@@ -47,20 +47,21 @@ nxtQues.onclick = () => {
         sessionStorage.setItem('scoreValue', scoreValue)
         window.localStorage.score = scoreValue;
         route(document.querySelector('#result-section'))
+
+        currentIdx = 0;
+        currentQuestion = new Question();
+        scoreValue = 0;
+        questionsTabel = Question.NewQuiz();
     }
     else {
         let value = document.querySelector('[clicked]').innerText;
         let key = answersSec.getAttribute('key');
         let que = questionsTabel.find(ele => ele.id == key).trueAns == value
-        if(que){
+        if (que) {
             scoreValue++;
         }
         GetQuestion()
     }
 }
 
-
-function FlushData(){
-
-}
 
