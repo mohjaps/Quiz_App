@@ -27,13 +27,14 @@ home_id.addEventListener("click", () => {
 });
 
 function route(e, callback = () => {}) {
-  section = document.querySelectorAll("section");
+  let section = document.querySelectorAll("section");
   callback(e);
   section.forEach(function (cls) {
     cls.classList.add("hidden");
   });
   e.classList.remove("hidden");
 }
+
 
 function startTimer(duration, display) {
   var timer = duration,
@@ -56,3 +57,5 @@ function startTimer(duration, display) {
     }
   }, 1000);
 }
+
+export default route
