@@ -11,7 +11,11 @@
     --secColor: #9E52FF;
     --thirdColor: #9CB4CC;
 }
-
+.section{
+    padding: 54px 27px;
+    width: 70%;
+    margin: 0 auto;
+}
 body {
     background-color: #F2D7D9;;
     font-family: 'Roboto', sans-serif;

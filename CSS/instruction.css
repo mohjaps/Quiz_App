@@ -1,9 +1,5 @@
 @import 'global.css';
-.section{
-    padding: 54px 27px;
-    width: 70%;
-    margin: 0 auto;
-}
+
 
 section#instructions-section h1{
     color: var(--thirdColor);
