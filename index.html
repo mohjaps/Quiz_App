@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="Css/instruction.css" />
     <link rel="stylesheet" href="CSS/quiz.css" />
     <link rel="stylesheet" href="CSS/index.css" />
-    <link rel="stylesheet" href="CSS/result.css">
+    <link rel="stylesheet" href="CSS/result.css" />
   </head>
 
   <body isBackgorundImage>
-    <section class="section">
+    <section class="welcomeSection section" id="welcomeSection">
       <div id="figure" class="welcome-img">
         <img src="images/Quiz App.png" alt="" />
       </div>
       <div class="btns">
-        <button>START</button>
-        <button>GUIDE</button>
+        <button id="startQuiz">START</button>
+        <!-- <button id="guide_btn">GUIDE</button> -->
       </div>
     </section>
     <section id="quizSection" class="section hidden">
@@ -33,10 +33,10 @@
         <li>Third Ans</li>
         <li>Forth Ans</li>
       </ol>
-      <button>Next →</button>
+      <button id="next_id">Next →</button>
     </section>
 
-    <section id="instructions-section" class="section">
+    <section id="instructions-section" class="section hidden">
       <h1 class="instructions-Heading">How to play?</h1>
       <ol class="instructions-list">
         <li class="instruction">There will be 10 questions</li>
@@ -51,12 +51,12 @@
         <input type="text" name="username" id="username" />
       </form>
       <div class="btns">
-        <button>START</button>
-        <button>HOME</button>
+        <button id="startQuiz" disabled>START</button>
+        <button id="QuizToHomeBtn">HOME</button>
       </div>
       <br />
     </section>
-    <section id="result-section" class="section">
+    <section id="result-section" class="section hidden">
       <h1>Results</h1>
       <table>
         <tr>
@@ -76,7 +76,7 @@
         </tr>
       </table>
       <div class="btn">
-        <button>Home</button>
+        <button id="QuizToHomeBtn">Home</button>
       </div>
     </section>
     <script src="JS/main.js"></script>
