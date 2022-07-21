@@ -1,1 +1,54 @@
 @import 'global.css';
+section#instructions-section{
+    padding: 54px 27px;
+    width: 70%;
+    margin: 0 auto;
+    background-color:var(--mainColor) ;
+    
+}
+section#instructions-section h1{
+    color: var(--thirdColor);
+    font-size: 50px;
+    text-shadow: 3px 3px 0px var(--secColor);
+    margin: 20px 0;
+}
+section#instructions-section ol.instructions-list{
+list-style: inside;
+list-style-type: decimal;
+
+}
+section#instructions-section form.startForm {
+margin-top:25px;
+}
+section#instructions-section form.startForm label {
+font-size: 25px;
+color: var(--thirdColor);
+text-shadow: 1px 1px 0px var(--secColor);
+}
+section#instructions-section form.startForm input {
+    font-size: 23px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background-color:var(--thirdColor) ;
+}
+section#instructions-section .btns {
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+section#instructions-section .btns button {
+   width: 100px;
+   height: 45px;
+   border-radius: 30px;
+   font-family: lato;
+   font-weight: 700;
+   border: none;
+   outline: none;
+   color: #fff;
+   background-color: var(--secColor);
+   margin: 0 auto;
+   cursor: pointer;
+}
+
