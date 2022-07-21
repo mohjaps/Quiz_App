@@ -10,9 +10,9 @@ start_id.addEventListener(
   
 );
 
-let next_id = document.getElementById("next_id");
+let next_id = document.getElementById("startQuiz");
 next_id.addEventListener("click", () => {
-  route(next_id);
+  route(quizSection);
 });
 
 let home_id = document.getElementById("QuizToHomeBtn");
