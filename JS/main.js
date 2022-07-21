@@ -1,4 +1,4 @@
-let start_id = document.getElementById("startQuiz");
+let start_id = document.getElementById("startQuiz2");
 let instructionSection = document.getElementById("instructions-section");
 start_id.addEventListener(
   "click",
