@@ -1,1 +1,47 @@
 @import 'global.css';
+
+#quizSection header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#quizSection header h1 {
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: var(--secColor);
+}
+
+#quizSection header h4 {
+    background-color: var(--secColor);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--lightColor);
+    user-select: none;
+}
+
+#quizSection #answersSec {
+    padding: 10px;
+
+}
+
+#quizSection #answersSec li {
+    list-style: none;
+    padding: 10px;
+    background-color: var(--thirdColor);
+    width: fit-content;
+    border-radius: 10%;
+    margin: 10px;
+    color: var(--lightColor);
+    cursor: pointer;
+    user-select: none;
+}
+
+#quizSection #answersSec li:hover {
+    background-color: var(--secColor);
+    color: var(--mainColor);
+}
+
+#quizSection #answersSec li[clicked] {
+    background-color: var(--secColor);
+}

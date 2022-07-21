@@ -4,12 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 0.3s;
 }
 
 :root {
     --mainColor: #F2D7D9;
     --secColor: #9E52FF;
     --thirdColor: #9CB4CC;
+
+    --lightColor: #F2D7D9;
 }
 .section{
     padding: 54px 27px;
@@ -17,7 +20,27 @@
     margin: 0 auto;
 }
 body {
-    background-color: #F2D7D9;;
+    background-color: var(--mainColor);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
+
+body[isBackgorundImage]{
+    background-image: url(../images/back.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+button {
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: lato;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: var(--secColor);
+    cursor: pointer;
+ }

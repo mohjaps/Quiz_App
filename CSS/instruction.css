@@ -34,16 +34,6 @@ section#instructions-section .btns {
     gap:1rem;
 }
 section#instructions-section .btns button {
-   width: 100px;
-   height: 45px;
-   border-radius: 30px;
-   font-family: lato;
-   font-weight: 700;
-   border: none;
-   outline: none;
-   color: #fff;
-   background-color: var(--secColor);
    margin: 0 auto;
-   cursor: pointer;
 }
 

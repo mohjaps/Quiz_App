@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="Css/instruction.css" />
-  </head>
+    <link rel="stylesheet" href="CSS/quiz.css">
 
-  <body>
+</head>
+
+<body isBackgorundImage>
+    <section id="quizSection" class="section hidden">
+        <header>
+            <h1><span># 1</span> <span>How Are You</span></h1>
+
+            <h4>10:00</h4>
+        </header>
+        <ol id="answersSec">
+            <li>First Ans</li>
+            <li>Second Ans</li>
+            <li>Third Ans</li>
+            <li>Forth Ans</li>
+        </ol>
+        <button>Next →</button>
+    </section>
+
     <section id="instructions-section" class="section">
-      <h1 class="instructions-Heading">How to play?</h1>
-      <ol class="instructions-list">
-        <li class="instruction">There will be 10 questions</li>
-        <li class="instruction">each question has one score</li>
-        <li class="instruction">you will have 4 options</li>
-        <li class="instruction">
-          you will see the result at the end of the quiz
-        </li>
-      </ol>
-      <form action="" class="startForm">
-        <label for="username">Enter your Name</label>
-        <input type="text" name="username" id="username" />
-      </form>
-      <div class="btns">
-        <button>START</button>
-        <button>HOME</button>
-      </div>
-      <br>
+        <h1 class="instructions-Heading">How to play?</h1>
+        <ol class="instructions-list">
+            <li class="instruction">There will be 10 questions</li>
+            <li class="instruction">each question has one score</li>
+            <li class="instruction">you will have 4 options</li>
+            <li class="instruction">
+                you will see the result at the end of the quiz
+            </li>
+        </ol>
+        <form action="" class="startForm">
+            <label for="username">Enter your Name</label>
+            <input type="text" name="username" id="username" />
+        </form>
+        <div class="btns">
+            <button>START</button>
+            <button>HOME</button>
+        </div>
+        <br>
     </section>
     <script src="JS/main.js"></script>
-  </body>
+</body>
+
 </html>
