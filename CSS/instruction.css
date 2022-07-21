@@ -1,11 +1,6 @@
 @import 'global.css';
-section#instructions-section{
-    padding: 54px 27px;
-    width: 70%;
-    margin: 0 auto;
-    background-color:var(--mainColor) ;
-    
-}
+
+
 section#instructions-section h1{
     color: var(--thirdColor);
     font-size: 50px;
