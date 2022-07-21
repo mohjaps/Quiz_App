@@ -1,1 +1,35 @@
 @import 'global.css';
+#result-section {
+    justify-content: center;
+    align-items: center;
+    
+}
+#result-section h1{
+    color: var(--thirdColor);
+    font-size: 50px;
+    text-shadow: 3px 3px 0px var(--secColor);
+    margin: 20px 0;
+    text-align: center;
+}
+#result-section table{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 1px 4px 27px 3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 4px 27px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 4px 27px 3px rgba(0,0,0,0.75);
+}
+#result-section table th{
+    background-color: var(--thirdColor);
+    height: 30px;
+    color: #fff;
+}
+#result-section table td{
+    background-color: #fff;
+    height: 30px;
+}
+#result-section .btn{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
