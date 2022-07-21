@@ -21,8 +21,12 @@ quizSection_id.addEventListener("click", () => {
 
 let home_id = document.getElementById("QuizToHomeBtn");
 let welcomeSection = document.getElementById("welcomeSection");
-
 home_id.addEventListener("click", () => {
+  route(welcomeSection);
+});
+
+let home = document.getElementById("QuizToHomeBtn2");
+home.addEventListener("click", () => {
   route(welcomeSection);
 });
 
@@ -56,11 +60,7 @@ function startTimer(duration, display) {
     }
   }, 1000);
 }
-let home = document.getElementById("QuizToHomeBtn");
-let welcomeSection2 = document.getElementById("welcomeSection");
 
-home.addEventListener("click", () => {
-  route(welcomeSection2);
-});
+
 
 export default route;
