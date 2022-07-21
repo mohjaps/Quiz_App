@@ -4,7 +4,7 @@ let startQuizBtn = document.querySelector("#startQuiz");
 let QuizToHomeBtn = document.querySelector("#QuizToHomeBtn");
 let table = document.querySelector("#table");
 userNameInput.addEventListener("input", () => {
-    // console.log(startQuizBtn);
+  // console.log(startQuizBtn);
   if (userNameInput.value) {
     startQuizBtn.disabled = false;
   } else {
@@ -20,7 +20,7 @@ startQuizBtn.addEventListener("click", () => {
 });
 let oldUser = {
   name: window.localStorage.newUserName,
-  score: 5,
+  score: window.localStorage.score,
 };
 let usersArr = [
   {
@@ -36,6 +36,7 @@ let usersArr = [
     score: 7,
   },
 ];
+usersArr.push(oldUser);
 let users = JSON.stringify(usersArr);
 localStorage.setItem("savetop", users);
 function addUsersToTable(User) {

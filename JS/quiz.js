@@ -45,6 +45,7 @@ function Choise() {
 nxtQues.onclick = () => {
     if (questionsTabel.length <= currentIdx) {
         sessionStorage.setItem('scoreValue', scoreValue)
+        window.localStorage.score = scoreValue;
         route(document.querySelector('#result-section'))
     }
     else {

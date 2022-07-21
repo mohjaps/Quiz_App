@@ -1,7 +1,7 @@
 let start_id = document.getElementById("startQuiz2");
 let instructionSection = document.getElementById("instructions-section");
 start_id.addEventListener("click", () => {
-    route(instructionSection, () => {});
+  route(instructionSection, () => {});
 });
 
 let next_id = document.getElementById("startQuiz");
@@ -35,7 +35,6 @@ function route(e, callback = () => {}) {
   e.classList.remove("hidden");
 }
 
-
 function startTimer(duration, display) {
   var timer = duration,
     minutes,
@@ -57,5 +56,11 @@ function startTimer(duration, display) {
     }
   }, 1000);
 }
+let home = document.getElementById("QuizToHomeBtn");
+let welcomeSection2 = document.getElementById("welcomeSection");
 
-export default route
+home.addEventListener("click", () => {
+  route(welcomeSection2);
+});
+
+export default route;
