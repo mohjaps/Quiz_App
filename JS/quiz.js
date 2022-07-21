@@ -1,4 +1,5 @@
 import Question from './question.js'
+import route from './main.js'
 
 let currentIdx = 0;
 let questionsTabel = [];
@@ -43,7 +44,8 @@ function Choise() {
 
 nxtQues.onclick = () => {
     if (questionsTabel.length <= currentIdx) {
-        alert(scoreValue)
+        sessionStorage.setItem('scoreValue', scoreValue)
+        route(document.querySelector('#result-section'))
     }
     else {
         let value = document.querySelector('[clicked]').innerText;
@@ -54,5 +56,10 @@ nxtQues.onclick = () => {
         }
         GetQuestion()
     }
+}
+
+
+function FlushData(){
+
 }
 
