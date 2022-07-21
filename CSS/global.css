@@ -1,46 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Cairo&family=Lato:wght@400;700&family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Cairo&family=Lato:wght@400;700&family=Open+Sans:wght@300&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: 0.3s;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
 }
 
 :root {
-    --mainColor: #F2D7D9;
-    --secColor: #9E52FF;
-    --thirdColor: #9CB4CC;
+  --mainColor: #f2d7d9;
+  --secColor: #9e52ff;
+  --thirdColor: #9cb4cc;
 
-    --lightColor: #F2D7D9;
+  --lightColor: #f2d7d9;
 }
-.section{
-    padding: 54px 27px;
-    width: 70%;
-    margin: 0 auto;
+.section {
+  padding: 54px 27px;
+  width: 70%;
+  margin: 0 auto;
 }
 body {
-    background-color: var(--mainColor);
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+  background-color: var(--mainColor);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
-body[isBackgorundImage]{
-    background-image: url(../images/back.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+body[isBackgorundImage] {
+  background-image: url(../images/back.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 button {
-    width: 100px;
-    height: 45px;
-    border-radius: 30px;
-    font-family: lato;
-    font-weight: 700;
-    border: none;
-    outline: none;
-    color: #fff;
-    background-color: var(--secColor);
-    cursor: pointer;
- }
+  width: 100px;
+  height: 45px;
+  border-radius: 30px;
+  font-family: lato;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: var(--secColor);
+  cursor: pointer;
+}
+button:disabled {
+  color: var(--secColor);
+  background-color: var(--lightColor);
+  cursor: not-allowed;
+  border: 2px solid var(--secColor);
+}
