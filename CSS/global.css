@@ -50,3 +50,6 @@ button:disabled {
   cursor: not-allowed;
   border: 2px solid var(--secColor);
 }
+.hidden{
+  display: none;
+}
